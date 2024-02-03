@@ -1,0 +1,46 @@
+<body>
+    <div
+      style="
+        display: flex;
+        position: relative;
+        width: 100%;
+        justify-content: center;
+      "
+    >
+      <div
+        style="
+          margin-top: 20px;
+          width: 800px;
+          display: flex;
+          position: relative;
+          justify-content: start;
+          align-items: center;
+          flex-direction: column;
+          background-color: floralwhite;
+        "
+      >
+        <div>
+          <img src="{{ lanmark.url }}" alt="image" width="800px" />
+        </div>
+        <div style="display: flex; position: relative; flex-direction: column">
+          <div style="margin-left: 20px">
+            <h2 style="margin: 0%;">{{ lanmark.name }}</h2>
+            <h3 style="margin: 0%;">{{ lanmark.country }}</h3>
+            <p style="margin-top: 0%;">{{ lanmark.detail }}</p>
+          </div>
+          <div>
+            <button
+              mat-raised-button
+              color="primary"
+              style="margin-left: 10px; height: 30px"
+              class="mdc-button mdc-button--raised mat-mdc-raised-button mat-primary mat-mdc-button-base"
+              routerLink=""
+            >
+              กลับ
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  

@@ -1,0 +1,43 @@
+@use '@angular/material' as mat;
+@import url("https://fonts.googleapis.com/css2?family=Itim&family=Noto+Sans+Thai+Looped&family=Noto+Serif+Thai:wght@100&display=swap");
+.font {
+  font-family: "Noto Sans Thai Looped", sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 0%;
+    padding: 10px;
+}
+
+.container > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  
+}
+
+h3, h2, p{
+    margin: 0%;
+}
+
+img{
+    width: 400px;
+    vertical-align: middle;
+}
+
+.grow{
+    transition: 0.25s ease;
+}
+.grow:hover {
+    transform: scale(1.15); /* or any scaling factor you desire */
+}
+
+.dense-4 {
+    @include mat.all-component-densities(-8);
+}
